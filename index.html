@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ここにはhtmlを記述 -->
+    <header>
+      <h1>じゃんけんアプリ</h1>
+    </header>
+
+    <div class="coursebox">
+      <div class="jibun">
+        <p>じぶん</p>
+      </div>
+      <div class="score-board">
+        <div id="user-label" class="badge"></div>
+        <div id="computer-label" class="badge"></div>
+        <!-- 最初のスコアを0:0と表示させる -->
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+      </div>    
+      <div class="aite">
+        <p>あいて</p>
+      </div>
+    </div>
+    
+    <div class="result">
+        <p id="demo3" class="demo3">あいて</p>
+
+        <h3>♪じゃんけん♪　どれかをえらんで！</h3>
+    </div>
+
+    <div class="choices">
+        <!-- グー -->
+        <div class="choice" id="r">
+          <img src="img/gu.png" alt="" width="200px" height="200px">
+        </div>
+        <!-- チョキ -->
+        <div class="choice" id="s">
+          <img src="img/choki.png" alt="" width="200px" height="200px">
+        </div>
+        <!-- パー -->
+        <div class="choice" id="p">
+          <img src="img/pa.png" alt="" width="200px" height="200px">
+        </div>
+    </div>
+     
+    <!-- ここにはhtmlを記述 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jqueryは必ず先に書く！！ -->
+    <script src="js/janken.js"></script>
+    <!-- 授業でやる箇所 ↑-->
+  </body>
+</html>
